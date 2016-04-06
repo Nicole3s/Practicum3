@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a9c8228-546f-4857-9fab-8cc97189c0ce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/News.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/models/News_model.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/database.php" afterPath="$PROJECT_DIR$/application/config/database.php" />
-    </list>
+    <list default="true" id="5a9c8228-546f-4857-9fab-8cc97189c0ce" name="Default" comment="" />
     <ignored path="Practicum3.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -40,10 +35,10 @@
       <file leaf-file-name="News_model.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/models/News_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24231242">
-              <caret line="10" column="26" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.13407134">
+              <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
               <folding>
-                <marker date="1459951754673" expanded="true" signature="220:436" placeholder="CREATE TABLE... news" />
+                <marker date="1459952629243" expanded="true" signature="220:436" placeholder="CREATE TABLE... news" />
               </folding>
             </state>
           </provider>
@@ -365,10 +360,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/News_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24231242">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.13407134">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
           <folding>
-            <marker date="1459951754673" expanded="true" signature="220:436" placeholder="CREATE TABLE... news" />
+            <marker date="1459952629243" expanded="true" signature="220:436" placeholder="CREATE TABLE... news" />
           </folding>
         </state>
       </provider>
