@@ -18,72 +18,13 @@
 
 <div id="previews">
     <div class="preview">
-    <?php
-
-    $query = $this->db->select('name, age, geslacht')->from('test')
-        ->group_start()
-        ->where('id', 1)
-        ->group_end()
-        ->get();
-
-    foreach ($query->result() as $row)
-    {
-        if ($row->geslacht == 'm') {
-            echo '<img src="assets/img/man.jpg" height="100">' . "<br>";
-        }
-        else{
-
-            echo '<img src="assets/img/vrouw.jpg" height="100">'. "<br>";
-        }
-
-        echo "Naam: ".$row->name ."<br>";
-        echo "Leeftijd: ".$row->age."<br>";
-        echo "Geslacht: ".$row->geslacht . "<br>";
-
-
-
-    }
-
-
-    ?>
-
-    </div>
-
-    <div class="preview">
         <?php
 
-        $query = $this->db->select('name, age, geslacht')->from('test')
+        $max = $this->db->count_all_results('Persoon');
+        $id = rand (1, $max);
+        $query = $this->db->select('naam, leeftijd, geslacht')->from('Persoon')
             ->group_start()
-            ->where('id', 2)
-            ->group_end()
-            ->get();
-
-        foreach ($query->result() as $row)
-        {
-            if ($row->geslacht == 'm') {
-                echo '<img src="assets/img/man.jpg" height="100">' . "<br>";
-            }
-            else{
-
-                echo '<img src="assets/img/vrouw.jpg" height="100">'. "<br>";
-            }
-
-            echo "Naam: ".$row->name ."<br>";
-            echo "Leeftijd: ".$row->age."<br>";
-        echo "Geslacht: ".$row->geslacht . "<br>";
-
-        }
-
-        ?>
-
-    </div>
-
-    <div class="preview">
-        <?php
-
-        $query = $this->db->select('name, age, geslacht')->from('test')
-            ->group_start()
-            ->where('id', 3)
+            ->where('id', $id )
             ->group_end()
             ->get();
 
@@ -97,9 +38,9 @@
                 echo '<img src="assets/img/vrouw.jpg" height="100">'. "<br>";
             }
 
-            echo "Naam: ".$row->name ."<br>";
-            echo "Leeftijd: ".$row->age."<br>";
-        echo "Geslacht: ".$row->geslacht . "<br>";
+            echo "Naam: ".$row->naam ."<br>";
+            echo "Leeftijd: ".$row->leeftijd."<br>";
+            echo "Geslacht: ".$row->geslacht . "<br>";
 
         }
 
@@ -110,9 +51,11 @@
     <div class="preview">
         <?php
 
-        $query = $this->db->select('name, age, geslacht')->from('test')
+        $max = $this->db->count_all_results('Persoon');
+        $id = rand (1, $max);
+        $query = $this->db->select('naam, leeftijd, geslacht')->from('Persoon')
             ->group_start()
-            ->where('id', 4)
+            ->where('id', $id )
             ->group_end()
             ->get();
 
@@ -126,40 +69,11 @@
                 echo '<img src="assets/img/vrouw.jpg" height="100">'. "<br>";
             }
 
-            echo "Naam: ".$row->name ."<br>";
-            echo "Leeftijd: ".$row->age."<br>";
-        echo "Geslacht: ".$row->geslacht . "<br>";
+            echo "Naam: ".$row->naam ."<br>";
+            echo "Leeftijd: ".$row->leeftijd."<br>";
+            echo "Geslacht: ".$row->geslacht . "<br>";
 
         }
-
-        ?>
-
-    </div>
-    <div class="preview">
-        <?php
-
-        $query = $this->db->select('name, age, geslacht')->from('test')
-            ->group_start()
-            ->where('id', 5)
-            ->group_end()
-            ->get();
-
-        foreach ($query->result() as $row)
-        {
-            if ($row->geslacht == 'm') {
-                echo '<img src="assets/img/man.jpg" height="100">' . "<br>";
-            }
-            else{
-
-                echo '<img src="assets/img/vrouw.jpg" height="100">'. "<br>";
-            }
-
-            echo "Naam: ".$row->name ."<br>";
-            echo "Leeftijd: ".$row->age."<br>";
-        echo "Geslacht: ".$row->geslacht . "<br>";
-
-        }
-
 
         ?>
 
@@ -168,9 +82,11 @@
     <div class="preview">
         <?php
 
-        $query = $this->db->select('name, age, geslacht')->from('test')
+        $max = $this->db->count_all_results('Persoon');
+        $id = rand (1, $max);
+        $query = $this->db->select('naam, leeftijd, geslacht')->from('Persoon')
             ->group_start()
-            ->where('id', 6)
+            ->where('id', $id )
             ->group_end()
             ->get();
 
@@ -184,15 +100,108 @@
                 echo '<img src="assets/img/vrouw.jpg" height="100">'. "<br>";
             }
 
-            echo "Naam: ".$row->name ."<br>";
-            echo "Leeftijd: ".$row->age."<br>";
-        echo "Geslacht: ".$row->geslacht . "<br>";
-            
+            echo "Naam: ".$row->naam ."<br>";
+            echo "Leeftijd: ".$row->leeftijd."<br>";
+            echo "Geslacht: ".$row->geslacht . "<br>";
+
         }
 
         ?>
 
     </div>
+
+    <div class="preview">
+        <?php
+
+        $max = $this->db->count_all_results('Persoon');
+        $id = rand (1, $max);
+        $query = $this->db->select('naam, leeftijd, geslacht')->from('Persoon')
+            ->group_start()
+            ->where('id', $id )
+            ->group_end()
+            ->get();
+
+        foreach ($query->result() as $row)
+        {
+            if ($row->geslacht == 'm') {
+                echo '<img src="assets/img/man.jpg" height="100">'. "<br>" ;
+            }
+            else{
+
+                echo '<img src="assets/img/vrouw.jpg" height="100">'. "<br>";
+            }
+
+            echo "Naam: ".$row->naam ."<br>";
+            echo "Leeftijd: ".$row->leeftijd."<br>";
+        echo "Geslacht: ".$row->geslacht . "<br>";
+
+        }
+
+        ?>
+
+    </div>
+    <div class="preview">
+        <?php
+
+        $max = $this->db->count_all_results('Persoon');
+        $id = rand (1, $max);
+        $query = $this->db->select('naam, leeftijd, geslacht')->from('Persoon')
+            ->group_start()
+            ->where('id', $id )
+            ->group_end()
+            ->get();
+
+        foreach ($query->result() as $row)
+        {
+            if ($row->geslacht == 'm') {
+                echo '<img src="assets/img/man.jpg" height="100">'. "<br>" ;
+            }
+            else{
+
+                echo '<img src="assets/img/vrouw.jpg" height="100">'. "<br>";
+            }
+
+            echo "Naam: ".$row->naam ."<br>";
+            echo "Leeftijd: ".$row->leeftijd."<br>";
+            echo "Geslacht: ".$row->geslacht . "<br>";
+
+        }
+
+        ?>
+
+    </div>
+
+    <div class="preview">
+        <?php
+        $max = $this->db->count_all_results('Persoon');
+        $id = rand (1, $max);
+        $query = $this->db->select('naam, leeftijd, geslacht')->from('Persoon')
+            ->group_start()
+            ->where('id', $id )
+            ->group_end()
+            ->get();
+
+        foreach ($query->result() as $row)
+        {
+            if ($row->geslacht == 'm') {
+                echo '<img src="assets/img/man.jpg" height="100">'. "<br>" ;
+            }
+            else{
+
+                echo '<img src="assets/img/vrouw.jpg" height="100">'. "<br>";
+            }
+
+            echo "Naam: ".$row->naam ."<br>";
+            echo "Leeftijd: ".$row->leeftijd."<br>";
+            echo "Geslacht: ".$row->geslacht . "<br>";
+
+        }
+
+        ?>
+
+    </div>
+  
+
 </div>
 
 <p>Meer</p>

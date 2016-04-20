@@ -2,9 +2,9 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Page_model extends CI_Model{
-    public function getTestData(){
+    public function getData(){
 
-        return $this->db->get('test')->result();
+        return $this->db->get('Persoon')->result();
     }
 
 }
