@@ -72,10 +72,7 @@
             echo "Leeftijd: ".$row->age."<br>";
         echo "Geslacht: ".$row->geslacht . "<br>";
 
-
-
         }
-
 
         ?>
 
@@ -103,8 +100,6 @@
             echo "Naam: ".$row->name ."<br>";
             echo "Leeftijd: ".$row->age."<br>";
         echo "Geslacht: ".$row->geslacht . "<br>";
-
-
 
         }
 
@@ -135,8 +130,6 @@
             echo "Leeftijd: ".$row->age."<br>";
         echo "Geslacht: ".$row->geslacht . "<br>";
 
-
-
         }
 
         ?>
@@ -164,8 +157,6 @@
             echo "Naam: ".$row->name ."<br>";
             echo "Leeftijd: ".$row->age."<br>";
         echo "Geslacht: ".$row->geslacht . "<br>";
-
-
 
         }
 
@@ -196,9 +187,7 @@
             echo "Naam: ".$row->name ."<br>";
             echo "Leeftijd: ".$row->age."<br>";
         echo "Geslacht: ".$row->geslacht . "<br>";
-
-
-
+            
         }
 
         ?>
