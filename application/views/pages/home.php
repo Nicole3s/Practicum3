@@ -32,9 +32,9 @@
             echo '<img src="assets/img/vrouw.jpg" height="100">'. "<br>";
         }
 
-        echo $row->name ."<br>";
-        echo $row->age."<br>";
-        echo $row->geslacht . "<br>";
+        echo "Naam: ".$row->name ."<br>";
+        echo "Leeftijd: ".$row->age."<br>";
+        echo "Geslacht: ".$row->geslacht . "<br>";
 
 
 
@@ -64,9 +64,9 @@
                 echo '<img src="assets/img/vrouw.jpg" height="100">'. "<br>";
             }
 
-            echo $row->name ."<br>";
-            echo $row->age."<br>";
-            echo $row->geslacht . "<br>";
+            echo "Naam: ".$row->name ."<br>";
+            echo "Leeftijd: ".$row->age."<br>";
+        echo "Geslacht: ".$row->geslacht . "<br>";
 
 
 
@@ -96,9 +96,9 @@
                 echo '<img src="assets/img/vrouw.jpg" height="100">'. "<br>";
             }
 
-            echo $row->name ."<br>";
-            echo $row->age."<br>";
-            echo $row->geslacht . "<br>";
+            echo "Naam: ".$row->name ."<br>";
+            echo "Leeftijd: ".$row->age."<br>";
+        echo "Geslacht: ".$row->geslacht . "<br>";
 
 
 
@@ -127,9 +127,9 @@
                 echo '<img src="assets/img/vrouw.jpg" height="100">'. "<br>";
             }
 
-            echo $row->name ."<br>";
-            echo $row->age."<br>";
-            echo $row->geslacht . "<br>";
+            echo "Naam: ".$row->name ."<br>";
+            echo "Leeftijd: ".$row->age."<br>";
+        echo "Geslacht: ".$row->geslacht . "<br>";
 
 
 
@@ -157,9 +157,9 @@
                 echo '<img src="assets/img/vrouw.jpg" height="100">'. "<br>";
             }
 
-            echo $row->name ."<br>";
-            echo $row->age."<br>";
-            echo $row->geslacht . "<br>";
+            echo "Naam: ".$row->name ."<br>";
+            echo "Leeftijd: ".$row->age."<br>";
+        echo "Geslacht: ".$row->geslacht . "<br>";
 
 
 
@@ -189,9 +189,9 @@
                 echo '<img src="assets/img/vrouw.jpg" height="100">'. "<br>";
             }
 
-            echo $row->name . "<br>";
-            echo $row->age . "<br>";
-            echo $row->geslacht . "<br>";
+            echo "Naam: ".$row->name ."<br>";
+            echo "Leeftijd: ".$row->age."<br>";
+        echo "Geslacht: ".$row->geslacht . "<br>";
 
 
 
