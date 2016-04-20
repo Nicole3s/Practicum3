@@ -1,4 +1,8 @@
 <div id="Home">
+    <div id="foto">
+        <img src="assets/img/plaatje.jpg">
+
+         </div>
 
 <p>Welcome bij DataDate!!
 
