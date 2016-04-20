@@ -1,6 +1,5 @@
 <div id="Home">
-<h2>Welcome to CodeIgniter</h2>
-<br>
+
 <p>Welcome bij DataDate!!
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempus tellus nulla, nec condimentum tortor tristique eget. Aliquam dapibus elit sed nulla convallis commodo. Mauris nec dapibus est. Etiam ipsum enim, imperdiet sit amet sapien vitae, mattis venenatis sem. Sed posuere felis non odio auctor, porttitor tempus ligula condimentum. Phasellus lectus sem, fringilla nec nunc quis, mollis viverra justo. Proin tincidunt ullamcorper urna, nec facilisis lectus faucibus ac. Donec turpis odio, feugiat at vestibulum at, blandit sit amet urna. Nullam rutrum venenatis purus, quis dapibus nulla bibendum in. Cras dignissim gravida dolor quis vulputate. Nunc maximus ut ipsum sit amet pharetra. Phasellus sed enim metus. Pellentesque id posuere leo. Nunc id sapien sit amet magna faucibus commodo.
@@ -11,35 +10,194 @@
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempus tellus nulla, nec condimentum tortor tristique eget. Aliquam dapibus elit sed nulla convallis commodo. Mauris nec dapibus est. Etiam ipsum enim, imperdiet sit amet sapien vitae, mattis venenatis sem. Sed posuere felis non odio auctor, porttitor tempus ligula condimentum. Phasellus lectus sem, fringilla nec nunc quis, mollis viverra justo. Proin tincidunt ullamcorper urna, nec facilisis lectus faucibus ac. Donec turpis odio, feugiat at vestibulum at, blandit sit amet urna. Nullam rutrum venenatis purus, quis dapibus nulla bibendum in. Cras dignissim gravida dolor quis vulputate. Nunc maximus ut ipsum sit amet pharetra. Phasellus sed enim metus. Pellentesque id posuere leo. Nunc id sapien sit amet magna faucibus commodo.
 
 
-    <p/>
+    </p>
 
 <div id="previews">
     <div class="preview">
+    <?php
 
+    $query = $this->db->select('name, age, geslacht')->from('test')
+        ->group_start()
+        ->where('id', 1)
+        ->group_end()
+        ->get();
+
+    foreach ($query->result() as $row)
+    {
+        if ($row->geslacht == 'm') {
+            echo '<img src="assets/img/man.jpg" height="100">' . "<br>";
+        }
+        else{
+
+            echo '<img src="assets/img/vrouw.jpg" height="100">'. "<br>";
+        }
+
+        echo $row->name ."<br>";
+        echo $row->age."<br>";
+        echo $row->geslacht . "<br>";
+
+
+
+    }
+
+
+    ?>
 
     </div>
 
     <div class="preview">
+        <?php
 
+        $query = $this->db->select('name, age, geslacht')->from('test')
+            ->group_start()
+            ->where('id', 2)
+            ->group_end()
+            ->get();
+
+        foreach ($query->result() as $row)
+        {
+            if ($row->geslacht == 'm') {
+                echo '<img src="assets/img/man.jpg" height="100">' . "<br>";
+            }
+            else{
+
+                echo '<img src="assets/img/vrouw.jpg" height="100">'. "<br>";
+            }
+
+            echo $row->name ."<br>";
+            echo $row->age."<br>";
+            echo $row->geslacht . "<br>";
+
+
+
+        }
+
+
+        ?>
 
     </div>
 
     <div class="preview">
+        <?php
 
+        $query = $this->db->select('name, age, geslacht')->from('test')
+            ->group_start()
+            ->where('id', 3)
+            ->group_end()
+            ->get();
+
+        foreach ($query->result() as $row)
+        {
+            if ($row->geslacht == 'm') {
+                echo '<img src="assets/img/man.jpg" height="100">'. "<br>" ;
+            }
+            else{
+
+                echo '<img src="assets/img/vrouw.jpg" height="100">'. "<br>";
+            }
+
+            echo $row->name ."<br>";
+            echo $row->age."<br>";
+            echo $row->geslacht . "<br>";
+
+
+
+        }
+
+        ?>
 
     </div>
 
     <div class="preview">
+        <?php
 
+        $query = $this->db->select('name, age, geslacht')->from('test')
+            ->group_start()
+            ->where('id', 4)
+            ->group_end()
+            ->get();
+
+        foreach ($query->result() as $row)
+        {
+            if ($row->geslacht == 'm') {
+                echo '<img src="assets/img/man.jpg" height="100">'. "<br>" ;
+            }
+            else{
+
+                echo '<img src="assets/img/vrouw.jpg" height="100">'. "<br>";
+            }
+
+            echo $row->name ."<br>";
+            echo $row->age."<br>";
+            echo $row->geslacht . "<br>";
+
+
+
+        }
+
+        ?>
 
     </div>
     <div class="preview">
+        <?php
 
+        $query = $this->db->select('name, age, geslacht')->from('test')
+            ->group_start()
+            ->where('id', 5)
+            ->group_end()
+            ->get();
+
+        foreach ($query->result() as $row)
+        {
+            if ($row->geslacht == 'm') {
+                echo '<img src="assets/img/man.jpg" height="100">' . "<br>";
+            }
+            else{
+
+                echo '<img src="assets/img/vrouw.jpg" height="100">'. "<br>";
+            }
+
+            echo $row->name ."<br>";
+            echo $row->age."<br>";
+            echo $row->geslacht . "<br>";
+
+
+
+        }
+
+
+        ?>
 
     </div>
 
     <div class="preview">
+        <?php
 
+        $query = $this->db->select('name, age, geslacht')->from('test')
+            ->group_start()
+            ->where('id', 6)
+            ->group_end()
+            ->get();
+
+        foreach ($query->result() as $row)
+        {
+            if ($row->geslacht == 'm') {
+                echo '<img src="assets/img/man.jpg" height="100">'. "<br>" ;
+            }
+            else{
+
+                echo '<img src="assets/img/vrouw.jpg" height="100">'. "<br>";
+            }
+
+            echo $row->name . "<br>";
+            echo $row->age . "<br>";
+            echo $row->geslacht . "<br>";
+
+
+
+        }
+
+        ?>
 
     </div>
 </div>
@@ -49,13 +207,3 @@
 
 </div>
 
-<?php
-    
-    if($dataSet)
-    {
-        foreach ($dataSet as $dataItem){
-
-            echo $dataItem->name;
-        }
-    }
-?>
