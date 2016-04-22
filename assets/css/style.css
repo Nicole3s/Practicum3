@@ -4,6 +4,7 @@
 }
 body{
     background-color: lightgrey;
+    margin-top: 4%;
 }
 
 header{
@@ -13,6 +14,7 @@ header{
     position: fixed;
     top:0px;
     left:0px;
+
 }
 
 
@@ -68,7 +70,7 @@ nav li a:hover {
 }
 
 #Home{
-    margin-top: 4%;
+
     width: 70%;
     margin-left: 15%;
 }
@@ -86,8 +88,8 @@ nav li a:hover {
 }
 
 .preview{
-    height: 60%;
-    width: 30%;
+    height: 40%;
+    width: 15%;
     float: left;
     margin-left: 1%;
     margin-bottom: 1%;
@@ -100,4 +102,24 @@ nav li a:hover {
 
     width: 100%;
 
+}
+
+a{
+    text-decoration: none;
+}
+
+#thumbnail, #thumbnailv{
+    width: 100%;
+    height: 50%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.thumbnail{
+    width: 100%;
+
+    overflow: hidden;
+}
+#thumnail, #thumbnailv {
+    width: 100%;
 }
