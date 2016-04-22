@@ -24,7 +24,7 @@ class Pages extends CI_Controller
             
             $dataSet = $this->page_model->getData();
             $this->load->view('templates/header',$data);
-            $this->load->view('pages/'.$page,$data,['dataSet' => $dataSet]);
+            $this->load->view('pages/'.$page,$data);
             $this->load->view('templates/footer',$data);
 
 
