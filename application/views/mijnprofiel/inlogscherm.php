@@ -1,28 +1,28 @@
-<html>
-<head>
-    <title>My Form</title>
-</head>
-<body>
+
 
 <?php echo validation_errors(); ?>
 
-<?php echo form_open('form'); ?>
+<?php echo form_open('mijnprofiel/login'); ?>
 
-<h5>Username</h5>
-<input type="text" name="username" value="" size="50" />
+<h5>Nickname</h5>
+<input type="text" name="nickname" value="<?php echo set_value('nickname'); ?>" size="50" />
 
-<h5>Password</h5>
-<input type="text" name="password" value="" size="50" />
+<h5>Naam</h5>
+<input type="text" name="naam" value="<?php echo set_value('username'); ?>" size="50" />
 
-<h5>Password Confirm</h5>
-<input type="text" name="passconf" value="" size="50" />
+<h5>Wachtwoord</h5>
+<input type="text" name="password" value="<?php echo set_value('password'); ?>" size="50" />
 
-<h5>Email Address</h5>
-<input type="text" name="email" value="" size="50" />
+<h5>Wachtwoord Bevestiging</h5>
+<input type="text" name="passconf" value="<?php echo set_value('passconf'); ?>" size="50" />
+
+<h5>Email Adres</h5>
+<input type="text" name="email" value="<?php echo set_value('email'); ?>" size="50" />
+
+<?php echo set_value('email'); ?>
 
 <div><input type="submit" value="Submit" /></div>
 
 </form>
 
-</body>
-</html>
+

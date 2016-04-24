@@ -22,7 +22,7 @@ class Pages extends CI_Controller
             $data['title']=ucfirst($page);
             $data['dataSet']= $this->page_model->getData();
             
-            $dataSet = $this->page_model->getData();
+            //$dataSet = $this->page_model->getData();
             $this->load->view('templates/header',$data);
             $this->load->view('pages/'.$page,$data);
             $this->load->view('templates/footer',$data);
