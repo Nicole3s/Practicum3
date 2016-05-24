@@ -23,13 +23,13 @@ header{
     text-decoration: none;
     float: left;
     font-size: 30px;
-    margin-top: 1.5%;
+    /*margin-top: 1.5%;*/
     font-weight: bold;
 }
 nav {
     height: 100%;
     float: left;
-    margin-top: 2%;
+    /*margin-top: 2%;*/
     margin-left: 1%;
 
 }
@@ -42,7 +42,7 @@ nav ul{
 
 nav li{
 
-    padding-top: 1%;
+    /*padding-top: 1%;*/
     float: left;
 
 }
